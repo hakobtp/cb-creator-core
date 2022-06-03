@@ -5,42 +5,42 @@ import com.htp.cb.creator.core.exp.Operation;
 
 public final class Field implements IField {
 
-    private final String name;
+    private final String columnName;
 
-    public Field(String name) {
-        this.name = name;
+    public Field(String columnName) {
+        this.columnName = columnName;
     }
 
-    public static Field of(String name) {
-        return new Field(name);
+    public static Field of(String columnName) {
+        return new Field(columnName);
     }
 
-    public String getName() {
-        return name;
+    public String getColumnName() {
+        return columnName;
     }
 
     @Override
     public <T> Expression eq(T t) {
-        return new Expression(name, Operation.EQ, t);
+        return new Expression(columnName, Operation.EQ, t);
     }
 
     @Override
     public <T> Expression notEq(T t) {
-        return new Expression(name, Operation.NOT_EQ, t);
+        return new Expression(columnName, Operation.NOT_EQ, t);
     }
 
     @Override
     public <T> Expression prefix(T t) {
-        return new Expression(name, Operation.PREFIX, t);
+        return new Expression(columnName, Operation.PREFIX, t);
     }
 
     @Override
     public <T> Expression suffix(T t) {
-        return new Expression(name, Operation.SUFFIX, t);
+        return new Expression(columnName, Operation.SUFFIX, t);
     }
 
     @Override
     public <T> Expression round(T t) {
-        return new Expression(name, Operation.ROUND, t);
+        return new Expression(columnName, Operation.ROUND, t);
     }
 }

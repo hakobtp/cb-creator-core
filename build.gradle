@@ -22,6 +22,7 @@ dependencies {
     implementation "javax.persistence:javax.persistence-api:$persistenceApiVersion"
 
     testImplementation "org.junit.jupiter:junit-jupiter-api:$jupiterVerson"
+    testImplementation "org.junit.jupiter:junit-jupiter-params:$jupiterVerson"
     testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$jupiterVerson"
 }
 
