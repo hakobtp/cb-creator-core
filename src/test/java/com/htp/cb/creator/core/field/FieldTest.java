@@ -1,13 +1,13 @@
 package com.htp.cb.creator.core.field;
 
-import com.htp.cb.creator.core.exp.Expression;
+import com.htp.cb.creator.core.expression.Expression;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.stream.Stream;
 
-import static com.htp.cb.creator.core.exp.Operation.*;
+import static com.htp.cb.creator.core.expression.Operation.*;
 import static com.htp.cb.creator.core.field.util.TestData.createExpression;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

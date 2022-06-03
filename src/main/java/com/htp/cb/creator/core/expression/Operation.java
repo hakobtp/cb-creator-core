@@ -1,4 +1,4 @@
-package com.htp.cb.creator.core.exp;
+package com.htp.cb.creator.core.expression;
 
 public enum Operation {
     EQ,

@@ -1,7 +1,7 @@
 package com.htp.cb.creator.core.field.util;
 
-import com.htp.cb.creator.core.exp.Expression;
-import com.htp.cb.creator.core.exp.Operation;
+import com.htp.cb.creator.core.expression.Expression;
+import com.htp.cb.creator.core.expression.Operation;
 
 public class TestData {
 
