@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+}
+
+group 'com.htp'
+version '0.01-SNAPSHOT'
+sourceCompatibility = '11'
+archivesBaseName = 'cb-creator'
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    jupiterVerson = '5.8.2'
+    persistenceApiVersion = '2.2'
+    validationApiVersion = '2.0.1.Final'
+}
+
+dependencies {
+    implementation "javax.validation:validation-api:$validationApiVersion"
+    implementation "javax.persistence:javax.persistence-api:$persistenceApiVersion"
+
+    testImplementation "org.junit.jupiter:junit-jupiter-api:$jupiterVerson"
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$jupiterVerson"
+}
+
+test {
+    useJUnitPlatform()
+}
